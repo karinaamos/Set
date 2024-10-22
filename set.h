@@ -1,4 +1,6 @@
 #include "BitField.h"
+#include <cstdint>
+#include <vector>
 
 class Set{
 private:
@@ -24,6 +26,17 @@ public:
     Set operator~();//дополнение
 
     friend std::istream& operator>>(std::istream& istr, Set& set);
-    friend std::istream& operator<<(std::istream& istr, const Set& set);
+    friend std::ostream& operator<<(std::ostream& istr, const Set& set){
+        for (int i = 0; i < set._maxPower; i++){
+            if (set._bitField.GetBit(i) == 1){
+                std::cout<<i<<" ";
+            }
+        }
+        std::cout<<"\n";
+        return istr;
+    }
+
+    std::vector<uint64_t> GetPrimary();
+
 };
 

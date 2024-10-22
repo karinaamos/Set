@@ -45,7 +45,7 @@ size_t BitField::GetMemIndex(size_t n) const {
 }
 
 uint8_t BitField::GetBit(size_t n) const {
-
+    return (_mem[GetMemIndex(n)] & GetMask(n)) != 0;
 }
 
 void BitField::ClrBit(size_t n){

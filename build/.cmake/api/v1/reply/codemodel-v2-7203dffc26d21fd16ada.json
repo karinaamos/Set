@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-0447ce9a0a7975d0ba54.json",
+					"jsonFile" : "target-main-Debug-6e789f8ccd9df8f1f977.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/s23380014@unn.global/amos/c++/classes/18.09.24/build",
-		"source" : "/home/s23380014@unn.global/amos/c++/classes/18.09.24"
+		"build" : "C:/c++ (2024-2025)/set/build",
+		"source" : "C:/c++ (2024-2025)/set"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 6
 	}
 }

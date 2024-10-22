@@ -1,5 +1,7 @@
 #include "set.h"
 #include <vector>
+#include <cstdint>
+#include <cmath>
 
 Set::Set(size_t mp): _bitField(mp){
 }
@@ -63,13 +65,21 @@ Set Set:: operator~(){//дополнение
     return result;
 }
 
-std::vector<uint64_t> Set:: GetPrimary(){
-    BitField b = _bitField;
-    std::vector<uint64_t> array;
-    for (size_t i=2; i<_maxPower; i++){
-        if (b.GetBit(i)){
-            
+std::vector<uint64_t> Set:: GetPrimary() {
+    std::vector<uint64_t> prim;
+    BitField tmp=_bitField;
+    for (size_t i = 2; i < sqrt(_maxPower); ++i) {
+        if (tmp.GetBit(i) != 1) { 
+            prim.push_back(i); 
+            for (size_t j = i + 1; j < _maxPower; j ++) {
+                tmp.ClrBit(j);
+            }
         }
     }
-
+    for (size_t i = sqrt(_maxPower) + 1; i < _maxPower; i++) {
+        if (tmp.GetBit(i) == 1) { 
+            prim.push_back(i); 
+        }
+    }
+    return prim;
 }

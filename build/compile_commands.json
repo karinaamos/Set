@@ -1,7 +1,8 @@
 [
 {
-  "directory": "/home/s23380014@unn.global/amos/c++/classes/18.09.24/build",
-  "command": "/usr/bin/g++-12    -std=c++17 -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380014@unn.global/amos/c++/classes/18.09.24/main.cpp",
-  "file": "/home/s23380014@unn.global/amos/c++/classes/18.09.24/main.cpp"
+  "directory": "C:/c++ (2024-2025)/set/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  -std=c++17 -g -o CMakeFiles\\main.dir\\main.cpp.obj -c \"C:\\c++ (2024-2025)\\set\\main.cpp\"",
+  "file": "C:\\c++ (2024-2025)\\set\\main.cpp",
+  "output": "CMakeFiles\\main.dir\\main.cpp.obj"
 }
 ]
